@@ -1,4 +1,6 @@
-package com.abhijeet;
+package com.abhijeet.basics;
+
+import com.abhijeet.encapsulation.EncapsulationIntro;
 
 public class Main {
 
@@ -34,11 +36,16 @@ public class Main {
         Person p3 = new Person("Abhijeet2.0",18);
         p3.Eating("dosa"); //referring to the problem noted down....I wanted to make a separate method specially for the second type of constructor but wasn't able to access the properties.
         //so the solution is to initialize those things in second constructor
+
+
+        //making an object from encapsulation class
+        EncapsulationIntro e1 = new EncapsulationIntro();
+        e1.publicFunction();
     }
 }
 
 class Person{
-    String name;
+    protected String name;
     int age;
     static int ObjectCount; //using static here because it is the property of class and not the object.
     //constructor class test
